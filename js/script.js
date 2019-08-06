@@ -37,3 +37,43 @@ else if(playerInput == '3'){
 }
 
 printMessage('Twój ruch to: ' + playerMove);
+
+if( computerMove == 'kamień' && playerMove == 'papier'){
+    printMessage('Ty wygrywasz!');
+  }
+
+else if( computerMove == 'kamień' && playerMove == 'nożyce'){
+    printMessage('Przegrywasz!');
+  }
+
+else if( computerMove == 'kamień' && playerMove == 'kamień'){
+    printMessage('Remis!');
+  }
+
+else if( computerMove == 'nożyce' && playerMove == 'papier'){
+    printMessage('Przegrywasz!');
+  }
+
+else if( computerMove == 'nożyce' && playerMove == 'nożyce'){
+    printMessage('Remis');
+  }
+
+else if( computerMove == 'nożyce' && playerMove == 'kamień'){
+    printMessage('Wygrywasz!');
+  }
+
+else if( computerMove == 'papier' && playerMove == 'papier'){
+    printMessage('Remis');
+  }
+
+else if( computerMove == 'papier' && playerMove == 'nożyce'){
+    printMessage('Wygrywasz!');
+  }
+
+else if( computerMove == 'papier' && playerMove == 'kamień'){
+    printMessage('RPrzegrałeś!');
+  }
+
+else {
+    printMessage('Nie czaruj tylko graj z zasadami');
+  }
