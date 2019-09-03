@@ -1,4 +1,5 @@
-function playGame(playerInput) {
+{
+  function playGame(playerInput) {
 
   function clearMessages(){
 
@@ -159,3 +160,4 @@ document.getElementById('play-scisors').addEventListener('click', function(){
 document.getElementById('play-paper').addEventListener('click', function(){
   playGame(2);
 });
+}
